@@ -1,7 +1,7 @@
 import React from "react";
 import Many from "../img/many.jpg";
 import MemphisCrawfisCo from "../img/MemphisCrawfisCo.jpg";
-import calculator from "../img/calculator.jpg";
+
 import PropTypes from "prop-types";
 import blitz from '../img/blitz.jpg'
 export default class Projects extends React.Component {
@@ -16,6 +16,8 @@ export default class Projects extends React.Component {
 							className={"text-center " + this.props.fadeInRight}>
 							Projects
 						</h1>
+						<iframe title="Blitz Build Project" width="400" height="400" src="https://www.youtube.com/embed/aWG2mwJWOw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+
 						<div className="row my-5">
 							<div
 								className={

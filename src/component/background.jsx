@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import myImage from '../img/myImage.jpg'
 import WOW from "wowjs";
-
+import TextLoop from 'react-text-loop'
 export default class Background extends React.Component {
 	componentDidMount() {
 		new WOW.WOW().init();
 	}
-
+ 
 	render() {
 		return (
 			<div id="my-background" className="background">
@@ -15,10 +15,14 @@ export default class Background extends React.Component {
 				<div id="stars2" />
 				<div id="stars3" />
 				<div className="top-container flex">
+				<img className={"image" + this.props.bounceIn} style={{ width:"300px",borderRadius:"80%"}} src={myImage} alt=""/>
 					<h1>
-						Hello, I&apos;m Michael Harley.
-						<br />
-						I&apos;m a Full Stack Web Developer.
+					{"  "}<TextLoop>						
+					<span>Hello, I&apos;m Michael Harley</span>
+						
+						<span>A Full Stack Web Developer</span> 
+						<span>from Auburn Wa.</span>	
+					</TextLoop>{"  "}
 					</h1>
 					{/* offset can be cahnged in node modules wowjs default file */}
 					<button

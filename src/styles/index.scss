@@ -96,7 +96,6 @@
     border-radius: 2rem;
     border: 1px #122444 solid;
     outline: none;
-    -moz-outline-style: none;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -117,9 +116,10 @@
 }
 
 #footer {
-    background-color: #061b3d;
-    color: gray;
+    background-color: gray;
+    color: black;
     z-index: 1000;
+
 }
 
 .btn-style {
@@ -154,26 +154,25 @@
 
 .testbg { 
     background-image: url("../img/many.jpg");
-    height: 400px; 
+    height: 350px; 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .mccbg { 
     background-image: url("../img/MemphisCrawfisCo.jpg");
-    height: 400px; 
+    height: 350px; 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .todobg { 
     background-image: url("../img/blitz.jpg");
-    height: 400px; 
-    width:50%;
+    height: 250px; 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .mytext {
@@ -194,9 +193,9 @@
     0% {opacity: 0; transform: translateY(300px);}
     100% {opacity: 1; transform: translateY(0)}
 }
-.hidden, .hiddenBot, .hiddenRight {
-    //opacity: 0;
-}
+// .hidden, .hiddenBot, .hiddenRight {
+//     //opacity: 0;
+// }
 .slideBot {
     animation: slideBot 1s;
 }
@@ -360,4 +359,16 @@
         width: 100%;
         height: 100%;
     }
+}
+
+#footer > div > div{
+    display:flex;
+}
+#my-projects > div > div > div.todobg.col-12.col-sm-12.col-md-4.wow.fadeIn{
+    margin-top:66px;
+}
+
+#my-contact  button:hover{
+    background:white !important;
+    color:green
 }

@@ -15,6 +15,9 @@ class Navbar extends React.Component {
 		this.contact = React.createRef();
 
 		this.scrolling = this.scrolling.bind(this);
+		this.state = {
+			togglerOpen: false
+		}
 	}
 
 	componentDidMount() {
@@ -58,8 +61,8 @@ class Navbar extends React.Component {
 					id="navbar"
 					className="navbar navbar-expand-lg navbar-light bg-light">
 					<div className="container">
-						<a
-							className="home-style navbar-brand"
+
+						<a  href="#Back" className="home-style navbar-brand"
 							onClick={() => {
 								window.scrollTo({
 									top: 0,
@@ -70,6 +73,7 @@ class Navbar extends React.Component {
 						</a>
 						<button
 							className="navbar-toggler"
+
 							type="button"
 							data-toggle="collapse"
 							data-target="navbarNavAltMarkup"
@@ -82,21 +86,22 @@ class Navbar extends React.Component {
 							className="collapse navbar-collapse"
 							id="navbarNavAltMarkup">
 							<div className="navbar-nav">
-								<a
+								<a href="#About"
 									onClick={() => {
 										this.scrolling(this.about);
 									}}
 									className="btn-style nav-item nav-link">
 									About
 								</a>
-								<a
+								<a href="#Projects"
 									onClick={() => {
 										this.scrolling(this.projects);
 									}}
 									className="btn-style nav-item nav-link">
 									Projects
 								</a>
-								<a
+
+								<a href="#Contact"
 									onClick={() => {
 										this.scrolling(this.contact);
 									}}

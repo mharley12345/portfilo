@@ -4,11 +4,12 @@ import PropTypes from "prop-types";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<div id="my-contact" className="container text-center my-5">
+			<div style={{paddingTop:"80px", height:"600px", backgroundColor:'black',color:"red"}} id="my-contact" className="container text-center my-5">
 				<h1 id="contact" className={"mb-3 " + this.props.fadeInLeft}>
 					Contact
 				</h1>
 				<form
+					style={{marginTop:"20px"}}
 					className={this.props.shake}
 					action="https://formspree.io/xzbzwbdd"
 					method="POST">
@@ -54,6 +55,7 @@ export default class Contact extends React.Component {
 					<div className="row text-md-right text-sm-center">
 						<div className="col-12 col-sm-12 col-md-6 mx-auto">
 							<button
+								style={{backgroundColor:"green",width:"200px",}}
 								type="submit"
 								className="btn btn-primary mb-2 hidden">
 								Submit

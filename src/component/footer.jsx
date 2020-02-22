@@ -25,14 +25,14 @@ class Footer extends React.Component {
 								<img src={github} alt=""/>
 							</a>
 							<a
-								href="https://www.linkedin.com/in/michael-harley-5336a9188"
+								href="https://www.linkedin.com/in/mike-harley"
 								target="_blank"
 								rel="noopener noreferrer">
 								<img src={linkedin} alt=""/>
 							</a>
 						</div>
 					</div>
-					<h5 className="pt-4">Michael Harley &copy; 2020</h5>
+					<h5 className="pt-4">Michael Harley &copy;{new Date().getFullYear()}</h5>
 				</div>
 			</div>
 		);

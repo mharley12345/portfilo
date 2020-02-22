@@ -3,9 +3,8 @@ import layers from "../img/layers.png";
 import cogwheel from "../img/cogwheel.png";
 import pen from "../img/pen.png";
 import browser from "../img/browser.png";
-import myImage from "../img/myImage.jpg";
 import PropTypes from "prop-types";
-
+import TextLoop from "react-text-loop"
 export default class About extends React.Component {
 	render() {
 		return (
@@ -46,34 +45,33 @@ export default class About extends React.Component {
 					</div>
 				</div>
 
-				<div className="row" style={{ marginTop: 7 + "rem" }}>
-					<div className="col-12 col-lg-6 hidden">
-						<img
-							className={"img-fluid " + this.props.fadeIn}
-							src={myImage}
-							alt=""
-							style={{
-								borderRadius: 50 + "%",
-								height: 250 + "px",
-								width: 250 + "px"
-							}}
-						/>
+				<div className="row" style={{ marginTop: 9 + "rem" }}>
+					<div style={{marginTop:"30px"}} className="col-12 col-lg-6 hidden">
 						<p className={"mytext pt-3 " + this.props.fadeIn}>
-							I love to transform ideas into reality using code. I
-							am passionate about using Javascript and animations
-							to create awesome user experiences. A copy of my  resume can be found  <a href="https://resume.mike-harley.me" target="_blank">here</a>
+						
+						I love to transform ideas into reality using code. 
+						I am passionate about using Javascript and animations
+						to create awesome user experiences.
+						 While using NodeJs and Express<br/> to create the back-end application.
+						{""}<TextLoop>
+						<span>A copy of my  resume can be found  <a href="https://docs.google.com/document/d/1ksblyjfAscjXnNSZUtlHQYZwILiagZxVLysVdPr0s2w/edit?usp=sharing" rel="noopener noreferrer" target="_blank">here</a></span>
+						<span>Below are some of the projects i've worked on</span>
+							 </TextLoop> {""}
 						</p>
+
 					</div>
+
 					<div
 						className={
 							"col-12 col-sm-12 col-md-12 col-lg-6 " +
 							this.props.tada
 						}>
+						<h2>Skills</h2>
 						<div className="progress mb-3">
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								HTML5
@@ -83,7 +81,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								CSS3
@@ -93,7 +91,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-90-bar"
 								role="progressbar"
-								style={{ width: 90 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								Javascript
@@ -103,17 +101,17 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								PHP
+								GraphQL
 							</div>
 						</div>
 						<div className="progress mb-3">
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								ReactJS
@@ -123,7 +121,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								NodeJs
@@ -133,7 +131,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								SASS
@@ -143,7 +141,7 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-80-bar"
 								role="progressbar"
-								style={{ width: 80 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
 								VanillaJS
@@ -153,13 +151,14 @@ export default class About extends React.Component {
 							<div
 								className="progress-bar fill-60-bar"
 								role="progressbar"
-								style={{ width: 60 + "%" }}
+								style={{ width: 100 + "%" }}
 								aria-valuemin="0"
 								aria-valuemax="100">
-								JQuery
+								Python
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		);
