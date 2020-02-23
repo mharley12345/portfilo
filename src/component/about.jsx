@@ -55,7 +55,7 @@ export default class About extends React.Component {
 						 While using NodeJs and Express<br/> to create the back-end application.
 						{""}<TextLoop>
 						<span>A copy of my  resume can be found  <a href="https://docs.google.com/document/d/1ksblyjfAscjXnNSZUtlHQYZwILiagZxVLysVdPr0s2w/edit?usp=sharing" rel="noopener noreferrer" target="_blank">here</a></span>
-						<span>Below are some of the projects i've worked on</span>
+						<span>Below are some of my projects</span>
 							 </TextLoop> {""}
 						</p>
 

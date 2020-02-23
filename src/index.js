@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "./styles/index.scss";
 
 ReactDOM.render(
-	<React.Fragment>
+	<React.Fragment className="my-new">
 		<Navbar />
 		<Footer />
 	</React.Fragment>, document.getElementById('root'));
