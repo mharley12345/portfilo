@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<div style={{paddingTop:"80px", height:"600px", background:"radial-gradient(#1B2735 0%, #090A0F 100%)",color:"white"}} id="my-contact" className="container text-center my-5">
+			<div style={{maxWidth:"100%",paddingTop:"80px", height:"600px", background:"radial-gradient(#1B2735 0%, #090A0F 100%)",color:"white"}} id="my-contact" className="container text-center my-5">
 				<div id="stars" />
 				<div id="stars2" />
 				<div id="stars3" />
