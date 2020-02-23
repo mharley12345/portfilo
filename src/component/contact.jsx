@@ -4,7 +4,10 @@ import PropTypes from "prop-types";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<div style={{paddingTop:"80px", height:"600px", backgroundColor:'black',color:"red"}} id="my-contact" className="container text-center my-5">
+			<div style={{paddingTop:"80px", height:"600px", background:"radial-gradient(#1B2735 0%, #090A0F 100%)",color:"white"}} id="my-contact" className="container text-center my-5">
+				<div id="stars" />
+				<div id="stars2" />
+				<div id="stars3" />
 				<h1 id="contact" className={"mb-3 " + this.props.fadeInLeft}>
 					Contact
 				</h1>
@@ -55,7 +58,7 @@ export default class Contact extends React.Component {
 					<div className="row text-md-right text-sm-center">
 						<div className="col-12 col-sm-12 col-md-6 mx-auto">
 							<button
-								style={{backgroundColor:"green",width:"200px",}}
+								style={{backgroundColor:"white" ,color:"black",borderRadius:"2rem",border:"1px #122444 solid",fontSize:"1.2rem",fontWeight:"600",width:"200px",}}
 								type="submit"
 								className="btn btn-primary mb-2 hidden">
 								Submit

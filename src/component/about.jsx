@@ -67,6 +67,9 @@ export default class About extends React.Component {
 							this.props.tada
 						}>
 						<h2>Skills</h2>
+						<div id="stars" />
+						<div id="stars2" />
+						<div id="stars3" />
 						<div className="progress mb-3">
 							<div
 								className="progress-bar fill-80-bar"

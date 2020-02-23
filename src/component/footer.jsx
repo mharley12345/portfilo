@@ -11,28 +11,31 @@ class Footer extends React.Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-12 col-sm-12 col-md-8 mx-auto">
-							<a
-								href="https://codepen.io"
-								target="_blank"
-								rel="noopener noreferrer">
-								<img className="img-fluid" src={codepen} alt=""/>
-							</a>
-							<a
+						<a
 								className="px-3"
 								href="https://github.com/mharley12345"
 								target="_blank"
 								rel="noopener noreferrer">
-								<img src={github} alt=""/>
+								<img width="6%" className="img-fluid" src={github} alt=""/>
 							</a>
-							<a
+						<a
 								href="https://www.linkedin.com/in/mike-harley"
 								target="_blank"
 								rel="noopener noreferrer">
-								<img src={linkedin} alt=""/>
+								<img width="9%" style ={{marginRight:"22px"}} className="img-fluid" src={linkedin} alt=""/>
 							</a>
+							
+							
+							<a
+								href="https://codepen.io/mike-harley"
+								target="_blank"
+								rel="noopener noreferrer">
+								<img width="6%" className="img-fluid" src={codepen} alt=""/>
+							</a>
+							
 						</div>
 					</div>
-					<h5 className="pt-4">Michael Harley &copy;{new Date().getFullYear()}</h5>
+					<h5 style={{paddingLeft:"15px"}} className="pt-4">Michael Harley &copy;{new Date().getFullYear()}</h5>
 				</div>
 			</div>
 		);
