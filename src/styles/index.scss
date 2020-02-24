@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,600,900');
 
 
 /*****************STARTS TOP BACKGROUND SECTION***************/
@@ -66,6 +66,20 @@
 
 /*********************************************************************************/
 
+#my-image{
+    width:17rem;
+    border-radius:80%
+}
+.blitz-video{
+    height:250px;
+    margin-top:4rem;
+}
+.my-5{
+  
+    width:100%;
+    
+}
+
 .background {
     overflow: hidden;
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
@@ -121,7 +135,9 @@
     z-index: 1000;
 
 }
-
+.text-left{
+    text-align:left 
+}
 .btn-style {
     font-size: 1.25rem;
 }
@@ -159,6 +175,7 @@
 .testbg { 
     background-image: url("../img/many.jpg");
     height: 350px; 
+    width:50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -173,11 +190,12 @@
 }
 .todobg { 
     background-image: url("../img/blitz.jpg");
-    height: 250px; 
+    height: 350px; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
+.bltVideo
 
 .mytext {
     font-size: 1.2rem;
@@ -358,25 +376,51 @@
     justify-content: space-between;
 }
 #desktop{
-    opacity:100
+    opacity:100;
+    padding-top:2rem;
 }
 #mobile{
     opacity:0
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
+ 
+   *{
+       overflow-x:hidden;
+       overflow-y:scroll;
+   }
+    #navbar > div > a{
+        width:98%;
+        text-align:center;
+        position:sticky
+    }
     .modal-card {
         width: 100%;
         height: 100%;
+    }
+    #gallery-card{
+        width:100%;
+        height:100%;
     }
   #desktop {
     opacity:0
   }
   #mobile{
-      opacity:100
+      opacity:100;
+    
       
+  }
+
+
+  hr{
+      display:none !important
   }
   iframe{
       width:100%;
+  }
+  #my-image{
+      width:15rem;
+      border-radius:80%
+     
   }
 
 }
@@ -384,7 +428,11 @@
 #footer > div > div{
     display:flex;
 }
-#my-projects > div > div > div.todobg.col-12.col-sm-12.col-md-4.wow.fadeIn{
-    margin-top:66px;
-}
 
+
+hr {
+    display:block;
+    border-width:8rem;
+    max-width:100%;
+    border-color:#1B2735;
+}

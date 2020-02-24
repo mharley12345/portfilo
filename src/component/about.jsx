@@ -45,20 +45,42 @@ export default class About extends React.Component {
 					</div>
 				</div>
 
-				<div className="row" style={{ marginTop: 9 + "rem" }}>
+				<div className="row text-left" style={{ marginTop: 9 + "rem" }}>
 					<div style={{marginTop:"30px"}} className="col-12 col-lg-6 hidden">
-						<p className={"mytext pt-3 " + this.props.fadeIn}>
+						<div id="desktop" className={"mytext pt-3 " + this.props.fadeIn}>
 						
-						I love to transform ideas into reality using code. 
-						I am passionate about using Javascript and animations
-						to create awesome user experiences.
-						 While using NodeJs and Express<br/> to create the back-end application.
-						{""}<TextLoop>
+						<span className="text-left">I love to transform ideas into reality using code.</span><br/>
+						<span className="text-left">I am passionate about using JavaScript and animations</span><br/>
+						<span className="text-left">To create awesome user experiences.</span><br/>
+						<span className="text-left">While using NodeJs and Express to create the back-end application.</span><br/>
+					
+						{" "}<TextLoop id="desktop">
 						<span>A copy of my  resume can be found  <a href="https://docs.google.com/document/d/1ksblyjfAscjXnNSZUtlHQYZwILiagZxVLysVdPr0s2w/edit?usp=sharing" rel="noopener noreferrer" target="_blank">here</a></span>
 						<span>Below are some of my projects</span>
-							 </TextLoop> {""}
+							 </TextLoop> {" "}
+							 
+						
+						</div>
+						<p id="mobile" className={"mytext pt-3 " + this.props.fadeIn}>
+						
+						I love to transform ideas into reality using code. 
+						I am passionate about using JavaScript and animations
+						To create awesome user experiences.
+						While using NodeJs and Express<br/> to create the back-end application.
+					
+						<TextLoop id="mobile">
+						<span>A copy of my resume</span>
+						<span>Can be found <a href="https://docs.google.com/document/d/1ksblyjfAscjXnNSZUtlHQYZwILiagZxVLysVdPr0s2w/edit?usp=sharing" rel="noopener noreferrer" target="_blank">here</a></span>
+						<span>Below are some of my projects</span>
+							 </TextLoop> 
+							 
+						
 						</p>
-
+					
+					
+					
+					
+						
 					</div>
 
 					<div
@@ -66,7 +88,7 @@ export default class About extends React.Component {
 							"col-12 col-sm-12 col-md-12 col-lg-6 " +
 							this.props.tada
 						}>
-						<h2>Skills</h2>
+						<h2 className="text-center !important">Skills</h2>
 						<div id="stars" />
 						<div id="stars2" />
 						<div id="stars3" />

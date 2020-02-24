@@ -16,12 +16,12 @@ export default class Projects extends React.Component {
 							className={"text-center " + this.props.fadeInRight}>
 							Projects
 						</h1>
-						<iframe title="Blitz Build Project" width="400" height="400" src="https://www.youtube.com/embed/aWG2mwJWOw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
 
 						<div className="row my-5">
+
 							<div
 								className={
-									"testbg col-12 col-sm-12 col-md-4 " +
+									"testbg  col-12 col-sm-12 col-md-6 col-lg-6 " +
 									this.props.fadeIn
 								}>
 								<div className="overlay">
@@ -48,9 +48,10 @@ export default class Projects extends React.Component {
 									</div>
 								</div>
 							</div>
+				
 							<div
 								className={
-									"mccbg col-12 col-sm-12 col-md-4 " +
+									"mccbg col-12 col-sm-12 col-md-6 col-lg-6 " +
 									this.props.fadeIn
 								}>
 								<div className="overlay">
@@ -77,11 +78,17 @@ export default class Projects extends React.Component {
 									</div>
 								</div>
 							</div>
+						</div>
+						<hr />
+						<div className={"row my-5"}>
+							<iframe id="bltVideo" className={"bltvideo col-12 col-sm-12 col-md-6 col-lg-6"} title="Blitz Build Project" width="399" src="https://www.youtube.com/embed/aWG2mwJWOw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+											<br/>
 							<div
 								className={
-									"todobg col-12 col-sm-12 col-md-4 " +
+									"todobg col-12 col-sm-12 col-md-6 col-lg-6" +
 									this.props.fadeIn
 								}>
+
 								<div className="overlay">
 									<div className="text">
 										<h2>Blitz Build</h2>
@@ -111,17 +118,17 @@ export default class Projects extends React.Component {
 				</div>
 
 				{/*hidden modals*/}
-				<div id="gallery-card">
+				<div id="gallery-card" >
 					<div id="many" className="modal-card">
 						<div className="visual">
-							<img src={Many} alt=""/>
+							<img src={Many} alt="" />
 						</div>
 						<div className="modal-info">
 							<h2>Many</h2>
 							<div className="modal-description">
 								<ul>
 									<li>
-									Marketing and e-commerce website.
+										Marketing and e-commerce website.
 									</li>
 									<li>
 										Designed with HTML5, CSS3, Bootstrap,
@@ -157,14 +164,14 @@ export default class Projects extends React.Component {
 
 					<div id="mcc" className="modal-card">
 						<div className="visual">
-							<img src={MemphisCrawfisCo} alt=""/>
+							<img src={MemphisCrawfisCo} alt="" />
 						</div>
 						<div className="modal-info">
 							<h2>Memphis Crawfish Company #2</h2>
 							<div className="modal-description">
 								<ul>
 									<li>
-								       Marketing website for a crawfish foodtruck.
+										Marketing website for a crawfish foodtruck.
 									</li>
 									<li>
 										Developed with HTML5, CSS3, Bootstrap,
@@ -176,7 +183,7 @@ export default class Projects extends React.Component {
 							<div className="modal-bottom">
 								<a
 									href="http://memphiscrawfishcompany-2.com"
-								     rel="noopener noreferrer"	target="_blank">
+									rel="noopener noreferrer" target="_blank">
 									<h3>View live demo</h3>
 								</a>
 								<p
@@ -205,14 +212,14 @@ export default class Projects extends React.Component {
 
 					<div id="todolist" className="modal-card">
 						<div className="visual">
-							<img src={blitz}  alt=""/>
+							<img src={blitz} alt="" />
 						</div>
 						<div className="modal-info">
 							<h2>Blitz Build</h2>
 							<div className="modal-description">
 								<ul>
 									<li>
-									  Blitz Build is a web application for project managers in the construction industry.
+										Blitz Build is a web application for project managers in the construction industry.
 									</li>
 									<li>
 										Developed with  React,Node, PostgreSQL, Semantic-Ui ,HTML5,  Bootstrap, Aws s3, Scss

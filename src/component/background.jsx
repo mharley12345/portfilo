@@ -15,27 +15,27 @@ export default class Background extends React.Component {
 				<div id="stars2" />
 				<div id="stars3" />
 				<div className="top-container flex">
-				<img className={"image" + this.props.bounceIn} style={{ width:"300px",borderRadius:"80%"}} src={myImage} alt=""/>
+				<img id="my-image"  src={myImage} alt=""/>
 					<h1 id="desktop">
 					{"  "}<TextLoop id="desktop">						
-					<span id="desktop">Hello, I&apos;m Michael Harley</span>
-						<span id="desktop"> A</span>
-						<span id="desktop">Full-Stack Web Developer</span> 
+					<span id="desktop">Hello, I&apos;m Mike Harley</span>
+						
+						<span id="desktop">A Full-Stack Web Developer</span> 
 						<span id="desktop">From Auburn, Wa</span>
 						</TextLoop>{"  "}
 					</h1>
-					<h3 id="mobile">
+					<h4 id="mobile">
 						{" "}<TextLoop id="mobile">
 						<span id="mobile">Hello,</span>
 						<span id="mobile">I&apos;m</span>
-						<span id="mobile">Michael Harley</span>
+						<span id="mobile">Mike Harley</span>
 						<span id="mobile">A</span>
 						<span id="mobile">Full-Stack</span>
 						<span id="mobile">Web Developer</span>
 						<span id="mobile">From</span>
 						<span id="mobile">Auburn, Wa</span>
 						</TextLoop>{" "}
-					</h3>
+					</h4>
 					{/* offset can be changed in node modules wowjs default file */}
 					<button
 						className={"work-button " + this.props.bounceIn}
