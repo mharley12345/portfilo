@@ -5,6 +5,7 @@ import pen from "../img/pen.png";
 import browser from "../img/browser.png";
 import PropTypes from "prop-types";
 import TextLoop from "react-text-loop"
+import myImage from '../img/myImage.jpg'
 export default class About extends React.Component {
 	render() {
 		return (
@@ -46,7 +47,9 @@ export default class About extends React.Component {
 				</div>
 
 				<div className="row text-left" style={{ marginTop: 9 + "rem" }}>
+			
 					<div style={{marginTop:"30px"}} className="col-12 col-lg-6 hidden">
+					<img id="my-image"  src={myImage} alt=""/>
 						<div id="desktop" className={"mytext pt-3 " + this.props.fadeIn}>
 						
 						<span className="text-left">I love to transform ideas into reality using code.</span><br/>
@@ -61,6 +64,7 @@ export default class About extends React.Component {
 							 
 						
 						</div>
+					
 						<p id="mobile" className={"mytext pt-3 " + this.props.fadeIn}>
 						
 						I love to transform ideas into reality using code. 

@@ -65,10 +65,16 @@
 }
 
 /*********************************************************************************/
-
+.navbar-light .navbar-nav .nav-link{
+    color:#FF8E31 !important
+}
+#navbar > div > a{
+    color:#FF8E31 !important
+}
 #my-image{
-    width:17rem;
-    border-radius:80%
+    width:15rem;
+    border-radius:90%;
+    margin-left:90px;
 }
 .blitz-video{
     height:250px;
@@ -198,8 +204,17 @@
 .bltVideo
 
 .mytext {
-    font-size: 1.2rem;
+    font-size: 1.10rem !important;
+    font-family: sans-serif;
+
 }
+.text-left{
+    font-size: 1.10rem !important;
+    font-family: sans-serif;
+}
+#topImg{
+    margin-top:28px;
+    }
 
 .btn-style:hover {
     cursor: pointer;
@@ -388,10 +403,12 @@
        overflow-x:hidden;
        overflow-y:scroll;
    }
+
     #navbar > div > a{
         width:98%;
         text-align:center;
-        position:sticky
+        position:sticky;
+        color:#FF8E31
     }
     .modal-card {
         width: 100%;
@@ -431,8 +448,8 @@
 
 
 hr {
-    display:block;
+   opacity:0;
     border-width:8rem;
-    max-width:100%;
+    width:fill;
     border-color:#1B2735;
 }
