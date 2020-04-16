@@ -398,10 +398,13 @@
     opacity:0
 }
 @media only screen and (max-width: 700px) {
- 
-   *{
+    *{
+        overflow-x:hidden;
+    }
+   #overflow{
        overflow-x:hidden;
-       overflow-y:scroll;
+       overflow-y:scroll
+     
    }
 
     #navbar > div > a{
@@ -452,4 +455,11 @@ hr {
     border-width:8rem;
     width:fill;
     border-color:#1B2735;
+}
+
+@media only screen and (max-width :550px){
+    #my-image{
+        margin-left:41px,
+    }
+
 }
