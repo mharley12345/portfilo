@@ -1,5 +1,6 @@
 {
-  "name": "portfolio-react-new",
+  "name": "michael-harley-portfilo",
+  "homepage":"http://info.harley-devs.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
